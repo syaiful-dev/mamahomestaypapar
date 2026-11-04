@@ -1,0 +1,12 @@
+# Temporary test output
+_shots/
+_work/
+
+# Raw source material (client photos, documents) - add folders here if they contain private info
+source/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

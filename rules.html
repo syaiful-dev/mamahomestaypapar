@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peraturan &amp; Terma | Mama Homestay Papar</title>
+  <meta name="description" content="Peraturan homestay dan terma diskaun Mama Homestay Papar, Sabah." />
+  <meta name="theme-color" content="#1f6f5c" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6f5c'/%3E%3Cpath d='M32 14 12 32h8v18h24V32h8z' fill='%23fbf7f0'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="rules">
+  <a class="skip-link" href="#main" data-i18n="skip">Terus ke kandungan</a>
+
+  <!-- DUMMY NOTICE: padam blok ini sebelum menyiarkan laman sebenar -->
+  <div class="dummy-bar" role="note" data-i18n="dummyBar">Halaman contoh. Semua maklumat, harga dan gambar adalah sementara.</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" data-i18n-aria="brandAria" aria-label="Mama Homestay Papar - laman utama">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 3 2 12h3v8h5v-5h4v5h5v-8h3z"/></svg>
+        </span>
+        <span class="brand-text">Mama Homestay <small>Papar</small></span>
+      </a>
+      <nav class="nav" aria-label="Menu utama">
+        <a href="index.html" data-i18n="rulesBack">Kembali ke laman utama</a>
+        <a class="btn btn-small" href="index.html#book" data-i18n="navBook">Tempah</a>
+        <button type="button" id="lang-toggle" class="lang-toggle" aria-label="Tukar bahasa">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container narrow">
+        <h1 data-i18n="rulesPageTitle">Peraturan &amp; Terma</h1>
+        <p data-i18n="rulesPageSub">Sila baca peraturan homestay dan terma diskaun sebelum menempah.</p>
+      </div>
+    </section>
+
+    <section class="section rules-section">
+      <div class="container narrow">
+        <div class="tabs" role="tablist" data-i18n-aria="tabsAria" aria-label="Pilih bahagian">
+          <button type="button" role="tab" id="tab-rules" class="tab is-active" aria-selected="true" aria-controls="panel-rules" data-i18n="tabRules">Peraturan Homestay</button>
+          <button type="button" role="tab" id="tab-discount" class="tab" aria-selected="false" aria-controls="panel-discount" tabindex="-1" data-i18n="tabDiscount">Terma Diskaun</button>
+        </div>
+
+        <!-- Panel 1: Peraturan -->
+        <div class="tab-panel card" id="panel-rules" role="tabpanel" aria-labelledby="tab-rules">
+          <p class="panel-intro" data-i18n="rulesIntro">Peraturan ini bertujuan untuk keselesaan dan keselamatan semua tetamu. Dengan menempah, anda bersetuju untuk mematuhinya.</p>
+          <p class="notice-sample" data-i18n="rulesDummyNote">Kandungan di bawah ialah contoh dan akan dikemas kini mengikut peraturan sebenar tuan rumah.</p>
+          <ol class="rule-list" data-i18n-list="rulesList"></ol>
+        </div>
+
+        <!-- Panel 2: Terma diskaun -->
+        <div class="tab-panel card" id="panel-discount" role="tabpanel" aria-labelledby="tab-discount" hidden>
+          <p class="panel-intro" data-i18n="discountIntro">Diskaun (jika ditawarkan) tertakluk kepada terma berikut.</p>
+          <p class="notice-sample" data-i18n="discountNote">Peratusan dan syarat diskaun sebenar akan dimasukkan selepas disahkan oleh tuan rumah. Kandungan di bawah ialah contoh.</p>
+          <ol class="rule-list" data-i18n-list="discountList"></ol>
+        </div>
+
+        <div class="rules-cta card">
+          <p data-i18n="rulesCtaText">Ada soalan tentang peraturan atau diskaun?</p>
+          <a class="btn btn-primary" href="https://wa.me/60123456789" data-wa data-wa-text-ms="Salam, saya ada soalan tentang peraturan dan diskaun di Mama Homestay Papar." data-wa-text-en="Hi, I have a question about the rules and discounts at Mama Homestay Papar." target="_blank" rel="noopener" data-i18n="rulesCtaBtn">Tanya melalui WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Mama Homestay Papar</p>
+        <p class="muted" data-i18n="footerTagline">Penginapan selesa dan mesra keluarga di Papar, Sabah.</p>
+      </div>
+      <div>
+        <p class="footer-title" data-i18n="footerContact">Hubungi kami</p>
+        <ul class="plain">
+          <li><span data-i18n="footerWaLabel">WhatsApp</span>: <a id="footer-wa" href="https://wa.me/60123456789" data-wa target="_blank" rel="noopener">012-345 6789</a></li>
+          <li><span data-i18n="footerEmailLabel">Emel</span>: <a id="footer-email" href="mailto:mamahomestaypapar@example.com">mamahomestaypapar@example.com</a></li>
+          <li>Papar, Sabah</li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title" data-i18n="footerLinks">Pautan pantas</p>
+        <ul class="plain">
+          <li><a href="index.html#rooms" data-i18n="footerLinkRooms">Pakej &amp; harga</a></li>
+          <li><a href="index.html#location" data-i18n="footerLinkLocation">Lokasi</a></li>
+          <li><a href="index.html#book" data-i18n="footerLinkBook">Tempah</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <p class="copyright">&copy; <span id="year">2026</span> Mama Homestay Papar. <span data-i18n="footerDummy">Halaman contoh.</span></p>
+    </div>
+  </footer>
+
+  <a class="fab" href="https://wa.me/60123456789" data-wa data-wa-text-ms="Salam, saya ingin bertanya tentang Mama Homestay Papar." data-wa-text-en="Hi, I would like to ask about Mama Homestay Papar." target="_blank" rel="noopener" data-i18n-aria="fabAria" aria-label="Hubungi kami melalui WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+  <script>
+    /* Tab: Peraturan / Terma Diskaun. Menyokong papan kekunci (anak panah kiri/kanan) dan #discount dalam URL. */
+    (function () {
+      var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+      var panels = { "tab-rules": document.getElementById("panel-rules"), "tab-discount": document.getElementById("panel-discount") };
+
+      function select(tab, focus) {
+        tabs.forEach(function (t) {
+          var on = t === tab;
+          t.classList.toggle("is-active", on);
+          t.setAttribute("aria-selected", on ? "true" : "false");
+          t.tabIndex = on ? 0 : -1;
+          panels[t.id].hidden = !on;
+        });
+        if (focus) tab.focus();
+        history.replaceState(null, "", tab.id === "tab-discount" ? "#discount" : "#rules");
+      }
+
+      tabs.forEach(function (tab, i) {
+        tab.addEventListener("click", function () { select(tab, false); });
+        tab.addEventListener("keydown", function (e) {
+          var next = null;
+          if (e.key === "ArrowRight") next = tabs[(i + 1) % tabs.length];
+          if (e.key === "ArrowLeft") next = tabs[(i - 1 + tabs.length) % tabs.length];
+          if (e.key === "Home") next = tabs[0];
+          if (e.key === "End") next = tabs[tabs.length - 1];
+          if (next) { e.preventDefault(); select(next, true); }
+        });
+      });
+
+      if (location.hash === "#discount") select(document.getElementById("tab-discount"), false);
+    })();
+  </script>
+</body>
+</html>
