@@ -2,8 +2,9 @@
 _shots/
 _work/
 
-# Raw source material (client photos, documents) - add folders here if they contain private info
+# Raw source documents (original .docx from the owner) - keep out of the repo
 source/
+~$*
 
 # OS / editor
 .DS_Store

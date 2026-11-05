@@ -6,7 +6,7 @@
   <title>Peraturan &amp; Terma | Mama Homestay Papar</title>
   <meta name="description" content="Peraturan homestay dan terma diskaun Mama Homestay Papar, Sabah." />
   <meta name="theme-color" content="#1f6f5c" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6f5c'/%3E%3Cpath d='M32 14 12 32h8v18h24V32h8z' fill='%23fbf7f0'/%3E%3C/svg%3E" />
+  <link rel="icon" href="assets/logo.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body data-page="rules">
@@ -18,10 +18,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" data-i18n-aria="brandAria" aria-label="Mama Homestay Papar - laman utama">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 3 2 12h3v8h5v-5h4v5h5v-8h3z"/></svg>
-        </span>
-        <span class="brand-text">Mama Homestay <small>Papar</small></span>
+        <img class="brand-logo" src="assets/logo.png" alt="Mama Homestay Papar" width="92" height="50" />
       </a>
       <nav class="nav" aria-label="Menu utama">
         <a href="index.html" data-i18n="rulesBack">Kembali ke laman utama</a>
@@ -43,17 +40,53 @@
       <div class="container narrow">
         <div class="tabs" role="tablist" data-i18n-aria="tabsAria" aria-label="Pilih bahagian">
           <button type="button" role="tab" id="tab-rules" class="tab is-active" aria-selected="true" aria-controls="panel-rules" data-i18n="tabRules">Peraturan Homestay</button>
+          <button type="button" role="tab" id="tab-halal" class="tab" aria-selected="false" aria-controls="panel-halal" tabindex="-1" data-i18n="tabHalal">Polisi Halal</button>
+          <button type="button" role="tab" id="tab-emergency" class="tab" aria-selected="false" aria-controls="panel-emergency" tabindex="-1" data-i18n="tabEmergency">Talian Kecemasan</button>
           <button type="button" role="tab" id="tab-discount" class="tab" aria-selected="false" aria-controls="panel-discount" tabindex="-1" data-i18n="tabDiscount">Terma Diskaun</button>
         </div>
 
         <!-- Panel 1: Peraturan -->
         <div class="tab-panel card" id="panel-rules" role="tabpanel" aria-labelledby="tab-rules">
           <p class="panel-intro" data-i18n="rulesIntro">Peraturan ini bertujuan untuk keselesaan dan keselamatan semua tetamu. Dengan menempah, anda bersetuju untuk mematuhinya.</p>
-          <p class="notice-sample" data-i18n="rulesDummyNote">Kandungan di bawah ialah contoh dan akan dikemas kini mengikut peraturan sebenar tuan rumah.</p>
           <ol class="rule-list" data-i18n-list="rulesList"></ol>
         </div>
 
-        <!-- Panel 2: Terma diskaun -->
+        <!-- Panel: Polisi Halal -->
+        <div class="tab-panel card" id="panel-halal" role="tabpanel" aria-labelledby="tab-halal" hidden>
+          <div class="halal-head">
+            <span class="halal-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+            </span>
+            <div>
+              <h2 class="halal-title" data-i18n="halalHeading">Makanan &amp; Minuman Halal Sahaja</h2>
+              <p class="halal-sub" data-i18n="halalLead">Premis Mama Homestay Papar hanya membenarkan makanan dan minuman halal.</p>
+            </div>
+          </div>
+          <p class="halal-warn" data-i18n="halalWarn">Tindakan tegas akan diambil jika membawa masuk makanan dan minuman bukan halal.</p>
+          <ul class="check-list" data-i18n-list="halalList"></ul>
+        </div>
+
+        <!-- Panel: Talian Kecemasan -->
+        <div class="tab-panel card" id="panel-emergency" role="tabpanel" aria-labelledby="tab-emergency" hidden>
+          <p class="panel-intro" data-i18n="emergencyIntro">Tekan mana-mana nombor di bawah untuk terus menghubunginya.</p>
+
+          <h3 class="emergency-group" data-i18n="emergencyOwnerTitle">Pemilik Homestay</h3>
+          <ul class="contact-list">
+            <li><a href="tel:+60114302004"><span class="c-name" data-i18n="ownerName">Pemilik (Utama)</span><span class="c-num">011-4302 2004</span></a></li>
+            <li><a href="tel:+60198408005"><span class="c-name" data-i18n="ownerName2">Pemilik</span><span class="c-num">019-840 8005</span></a></li>
+            <li><a href="tel:+60112300711"><span class="c-name" data-i18n="ownerName3">Pemilik</span><span class="c-num">011-2300 7011</span></a></li>
+          </ul>
+
+          <h3 class="emergency-group" data-i18n="emergencyServicesTitle">Perkhidmatan Kecemasan (Papar)</h3>
+          <ul class="contact-list">
+            <li><a href="tel:+60887512100"><span class="c-name" data-i18n="svcPolice">Balai Polis Papar</span><span class="c-num">088-751210</span></a></li>
+            <li><a href="tel:+60889133330"><span class="c-name" data-i18n="svcHospital">Hospital Papar</span><span class="c-num">088-913333</span></a></li>
+            <li><a href="tel:+60889135210"><span class="c-name" data-i18n="svcFire">Balai Bomba Papar</span><span class="c-num">088-913521</span></a></li>
+            <li><a href="tel:999"><span class="c-name" data-i18n="svc999">Talian Kecemasan Kebangsaan</span><span class="c-num">999</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Panel: Terma diskaun -->
         <div class="tab-panel card" id="panel-discount" role="tabpanel" aria-labelledby="tab-discount" hidden>
           <p class="panel-intro" data-i18n="discountIntro">Diskaun (jika ditawarkan) tertakluk kepada terma berikut.</p>
           <p class="notice-sample" data-i18n="discountNote">Peratusan dan syarat diskaun sebenar akan dimasukkan selepas disahkan oleh tuan rumah. Kandungan di bawah ialah contoh.</p>
@@ -71,7 +104,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>
-        <p class="footer-brand">Mama Homestay Papar</p>
+        <img class="footer-logo" src="assets/logo.png" alt="Mama Homestay Papar" width="150" height="82" />
         <p class="muted" data-i18n="footerTagline">Penginapan selesa dan mesra keluarga di Papar, Sabah.</p>
       </div>
       <div>
@@ -86,8 +119,8 @@
         <p class="footer-title" data-i18n="footerLinks">Pautan pantas</p>
         <ul class="plain">
           <li><a href="index.html#rooms" data-i18n="footerLinkRooms">Pakej &amp; harga</a></li>
-          <li><a href="index.html#location" data-i18n="footerLinkLocation">Lokasi</a></li>
           <li><a href="index.html#book" data-i18n="footerLinkBook">Tempah</a></li>
+          <li><a href="#emergency" data-i18n="footerLinkEmergency">Talian Kecemasan</a></li>
         </ul>
       </div>
     </div>
@@ -104,10 +137,12 @@
   <script src="i18n.js"></script>
   <script src="script.js"></script>
   <script>
-    /* Tab: Peraturan / Terma Diskaun. Menyokong papan kekunci (anak panah kiri/kanan) dan #discount dalam URL. */
+    /* Tab: Peraturan / Halal / Kecemasan / Diskaun. Menyokong papan kekunci dan hash dalam URL. */
     (function () {
       var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
-      var panels = { "tab-rules": document.getElementById("panel-rules"), "tab-discount": document.getElementById("panel-discount") };
+      // Setiap tab mengawal panel melalui atribut aria-controls.
+      var hashFor = { "tab-rules": "#rules", "tab-halal": "#halal", "tab-emergency": "#emergency", "tab-discount": "#discount" };
+      var byHash = { "#rules": "tab-rules", "#halal": "tab-halal", "#emergency": "tab-emergency", "#discount": "tab-discount" };
 
       function select(tab, focus) {
         tabs.forEach(function (t) {
@@ -115,10 +150,10 @@
           t.classList.toggle("is-active", on);
           t.setAttribute("aria-selected", on ? "true" : "false");
           t.tabIndex = on ? 0 : -1;
-          panels[t.id].hidden = !on;
+          document.getElementById(t.getAttribute("aria-controls")).hidden = !on;
         });
         if (focus) tab.focus();
-        history.replaceState(null, "", tab.id === "tab-discount" ? "#discount" : "#rules");
+        history.replaceState(null, "", hashFor[tab.id] || "#rules");
       }
 
       tabs.forEach(function (tab, i) {
@@ -133,7 +168,8 @@
         });
       });
 
-      if (location.hash === "#discount") select(document.getElementById("tab-discount"), false);
+      var start = byHash[location.hash];
+      if (start) select(document.getElementById(start), false);
     })();
   </script>
 </body>

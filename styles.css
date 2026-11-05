@@ -1,21 +1,21 @@
 /* Mama Homestay Papar - styles
-   Palette: tropical green, warm gold and cream. Change the values below to retheme. */
+   Palette taken from the official logo: terracotta, sage green and cream. */
 :root {
-  --brand: #1f6f5c;        /* deep green */
-  --brand-dark: #154c3f;
-  --brand-deep: #0e3329;
-  --brand-soft: #e3f1ed;   /* light green tint for icons */
-  --accent: #e8a33d;       /* warm gold */
-  --accent-dark: #b9791a;
-  --cream: #fbf7f0;
-  --ink: #1d2b27;
-  --text: #33423d;
-  --muted: #667570;
-  --border: #e6dfd2;
+  --brand: #b05f45;        /* terracotta (logo) */
+  --brand-dark: #8f4a35;
+  --brand-deep: #6d3927;
+  --brand-soft: #f3e6e0;   /* light terracotta tint for icons */
+  --accent: #8a9b7e;       /* sage green (logo) */
+  --accent-dark: #6f8162;
+  --cream: #faf5ee;
+  --ink: #3a2c26;
+  --text: #4a3d37;
+  --muted: #8a7a71;
+  --border: #ece0d6;
   --bg: #ffffff;
   --radius: 16px;
-  --shadow: 0 8px 24px rgba(20, 50, 40, 0.09);
-  --shadow-lg: 0 16px 40px rgba(20, 50, 40, 0.2);
+  --shadow: 0 8px 24px rgba(90, 50, 35, 0.09);
+  --shadow-lg: 0 16px 40px rgba(90, 50, 35, 0.2);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -54,7 +54,8 @@ p { margin: 0 0 1em; }
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 64px; gap: 1rem; }
 .brand { display: inline-flex; align-items: center; gap: 0.6rem; font-weight: 800; font-size: 1.15rem; color: var(--ink); text-decoration: none; }
-.brand-mark { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 11px; background: var(--brand); color: #fff; }
+.brand-logo { display: block; height: 46px; width: auto; }
+.brand-text { line-height: 1; }
 .brand-text small { font-weight: 600; color: var(--brand); font-size: 0.95em; }
 .nav { display: flex; align-items: center; gap: 1.25rem; }
 .nav a { text-decoration: none; color: var(--text); font-weight: 500; }
@@ -190,6 +191,42 @@ input[aria-invalid="true"], select[aria-invalid="true"], textarea[aria-invalid="
 .site-footer a { color: #ffd68a; }
 .site-footer .muted { color: #a9c4ba; }
 .copyright { border-top: 1px solid rgba(255, 255, 255, 0.14); padding: 1.2rem 0; margin: 0; font-size: 0.85rem; color: #a9c4ba; }
+
+/* Halal strip (home page) */
+.halal-strip { background: var(--brand); color: #fff; padding: 1.6rem 0; }
+.halal-strip-inner { display: flex; align-items: center; gap: 1.2rem; flex-wrap: wrap; }
+.halal-icon { flex: none; display: grid; place-items: center; width: 54px; height: 54px; border-radius: 14px; background: rgba(255,255,255,0.18); color: #fff; }
+.halal-icon svg { width: 30px; height: 30px; }
+.halal-strip-text { flex: 1; min-width: 220px; }
+.halal-strip-text h2 { color: #fff; margin: 0 0 0.2rem; font-size: 1.3rem; }
+.halal-strip-text h2::after { display: none; }
+.halal-strip-text p { color: #fbeee9; margin: 0; }
+.btn-outline-light { background: transparent; color: #fff; border-color: rgba(255,255,255,0.75); white-space: nowrap; }
+.btn-outline-light:hover { background: #fff; color: var(--brand); }
+
+/* Halal panel (rules page) */
+.halal-head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.halal-badge { flex: none; display: grid; place-items: center; width: 56px; height: 56px; border-radius: 16px; background: var(--brand-soft); color: var(--brand); }
+.halal-badge svg { width: 32px; height: 32px; }
+.halal-title { margin: 0; font-size: 1.3rem; }
+.halal-sub { margin: 0.2rem 0 0; color: var(--muted); }
+.halal-warn { background: var(--brand-soft); color: var(--brand-dark); border-left: 4px solid var(--brand); border-radius: 8px; padding: 0.8rem 1rem; font-weight: 600; margin: 0 0 1.2rem; }
+
+/* Emergency contacts (rules page) */
+.emergency-group { font-size: 1rem; color: var(--brand); text-transform: uppercase; letter-spacing: 0.04em; margin: 1.6rem 0 0.6rem; }
+.emergency-group:first-of-type { margin-top: 0.5rem; }
+.contact-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; }
+.contact-list a {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: 0.9rem 1.1rem; border: 1.5px solid var(--border); border-radius: 12px;
+  text-decoration: none; color: var(--ink); background: #fff; font-weight: 600;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.1s ease;
+}
+.contact-list a:hover { border-color: var(--brand); background: var(--brand-soft); }
+.contact-list a:active { transform: scale(0.99); }
+.contact-list .c-name { display: flex; align-items: center; gap: 0.5rem; }
+.contact-list .c-name::before { content: "\260E"; color: var(--brand); font-size: 1.1rem; }
+.contact-list .c-num { color: var(--brand); font-weight: 800; white-space: nowrap; }
 
 /* Rules & Terms page */
 .page-head { background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%); color: #fff; padding: 3rem 0 2.5rem; text-align: center; }

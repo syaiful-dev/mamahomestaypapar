@@ -9,7 +9,7 @@
   <meta property="og:description" content="Penginapan selesa dan mesra keluarga di Papar, Sabah. Tempah terus melalui WhatsApp." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#1f6f5c" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6f5c'/%3E%3Cpath d='M32 14 12 32h8v18h24V32h8z' fill='%23fbf7f0'/%3E%3C/svg%3E" />
+  <link rel="icon" href="assets/logo.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body data-page="index">
@@ -22,10 +22,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" data-i18n-aria="brandAria" aria-label="Mama Homestay Papar - laman utama">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 3 2 12h3v8h5v-5h4v5h5v-8h3z"/></svg>
-        </span>
-        <span class="brand-text">Mama Homestay <small>Papar</small></span>
+        <img class="brand-logo" src="assets/logo.png" alt="Mama Homestay Papar" width="92" height="50" />
       </a>
       <nav class="nav" aria-label="Menu utama">
         <a href="#highlights" data-i18n="navHighlights">Kemudahan</a>
@@ -146,6 +143,20 @@
             <p data-i18n="feat6Desc">Dekat dengan kedai makan dan tempat menarik di sekitar Papar.</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- Notis halal -->
+    <section class="halal-strip" id="halal">
+      <div class="container halal-strip-inner">
+        <span class="halal-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+        </span>
+        <div class="halal-strip-text">
+          <h2 data-i18n="halalStripTitle">Makanan &amp; Minuman Halal Sahaja</h2>
+          <p data-i18n="halalStripDesc">Premis Mama Homestay Papar hanya membenarkan makanan dan minuman halal dibawa masuk.</p>
+        </div>
+        <a class="btn btn-outline-light" href="rules.html#halal" data-i18n="halalStripLink">Baca polisi halal</a>
       </div>
     </section>
 
@@ -332,7 +343,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>
-        <p class="footer-brand">Mama Homestay Papar</p>
+        <img class="footer-logo" src="assets/logo.png" alt="Mama Homestay Papar" width="150" height="82" />
         <p class="muted" data-i18n="footerTagline">Penginapan selesa dan mesra keluarga di Papar, Sabah.</p>
       </div>
       <div>
@@ -347,9 +358,9 @@
         <p class="footer-title" data-i18n="footerLinks">Pautan pantas</p>
         <ul class="plain">
           <li><a href="#rooms" data-i18n="footerLinkRooms">Pakej &amp; harga</a></li>
-          <li><a href="#location" data-i18n="footerLinkLocation">Lokasi</a></li>
           <li><a href="#book" data-i18n="footerLinkBook">Tempah</a></li>
-          <li><a href="rules.html" data-i18n="footerLinkRules">Peraturan &amp; Terma Diskaun</a></li>
+          <li><a href="rules.html" data-i18n="footerLinkRules">Peraturan &amp; Terma</a></li>
+          <li><a href="rules.html#emergency" data-i18n="footerLinkEmergency">Talian Kecemasan</a></li>
         </ul>
       </div>
     </div>
