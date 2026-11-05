@@ -27,8 +27,8 @@ const CONFIG = {
       featured: false,
       badge: null,
       features: {
-        ms: ["Seluruh rumah untuk kumpulan anda", "Penghawa dingin", "Dapur boleh guna", "Wi-Fi percuma", "Parkir percuma"],
-        en: ["The whole house for your group", "Air conditioning", "Usable kitchen", "Free Wi-Fi", "Free parking"],
+        ms: ["Seluruh rumah untuk kumpulan anda", "Penghawa dingin di setiap bilik & ruang tamu", "Dapur boleh guna", "Wi-Fi percuma", "Parkir luas"],
+        en: ["The whole house for your group", "Air conditioning in every room & living room", "Usable kitchen", "Free Wi-Fi", "Spacious parking"],
       },
     },
     {
@@ -38,8 +38,22 @@ const CONFIG = {
       featured: false,
       badge: null,
       features: {
-        ms: ["Pakej ruang tamu tambahan", "Butiran pakej akan dikemas kini"],
-        en: ["Additional living room package", "Package details to be updated"],
+        ms: [
+          "Seluruh rumah + ruang tamu tambahan",
+          "Sesuai untuk majlis pertunangan, hari jadi, pernikahan & keramaian",
+          "Ruang lebih luas untuk tetamu",
+          "Dapur boleh guna",
+          "Penghawa dingin & Wi-Fi percuma",
+          "Parkir luas",
+        ],
+        en: [
+          "The whole house + additional living room",
+          "Ideal for engagements, birthdays, weddings & gatherings",
+          "More space for guests",
+          "Usable kitchen",
+          "Air conditioning & free Wi-Fi",
+          "Spacious parking",
+        ],
       },
     },
   ],
