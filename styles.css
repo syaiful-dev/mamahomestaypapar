@@ -155,12 +155,6 @@ p { margin: 0 0 1em; }
 .check-list li:last-child { border-bottom: 0; }
 .check-list li::before { content: "\2713"; position: absolute; left: 0; color: var(--brand); font-weight: 800; }
 
-/* Reviews */
-.review { margin: 0; display: flex; flex-direction: column; }
-.stars { color: var(--accent-dark); font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 0.4rem; }
-.review blockquote { margin: 0 0 1rem; color: var(--text); flex: 1; }
-.review figcaption { font-weight: 700; color: var(--ink); }
-
 /* Form */
 .form { display: grid; gap: 1.1rem; padding: 2rem; }
 .field { display: flex; flex-direction: column; gap: 0.35rem; }

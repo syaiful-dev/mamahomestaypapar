@@ -96,16 +96,6 @@
       distKimanis: " - lebih kurang 20 km",
       distPanBorneo: " - akses mudah berdekatan",
 
-      /* ---------- Ulasan ---------- */
-      reviewsTitle: "Kata tetamu kami",
-      reviewsSub: "Ulasan contoh. Ulasan sebenar tetamu akan dimasukkan kemudian.",
-      review1: "Rumah bersih dan selesa. Sesuai untuk kami sekeluarga.",
-      review2: "Tuan rumah mesra dan sentiasa membantu. Check-in pun mudah.",
-      review3: "Lokasi senang dicari dan harga berpatutan.",
-      reviewer1: "Nama Tetamu 1",
-      reviewer2: "Nama Tetamu 2",
-      reviewer3: "Nama Tetamu 3",
-
       /* ---------- Borang tempahan ---------- */
       bookTitle: "Semak ketersediaan &amp; tempah",
       bookSub: "Isi butiran penginapan anda. WhatsApp akan terbuka dengan permintaan anda sedia dihantar. Tempahan disahkan selepas kami membalas.",
@@ -318,16 +308,6 @@
       distPapar: " - about 6 km",
       distKimanis: " - about 20 km",
       distPanBorneo: " - easy access nearby",
-
-      /* ---------- Reviews ---------- */
-      reviewsTitle: "What our guests say",
-      reviewsSub: "Sample reviews. Real guest reviews will be added later.",
-      review1: "Clean and comfortable house. Perfect for our family.",
-      review2: "Friendly and helpful host. Check-in was easy too.",
-      review3: "Easy to find and reasonably priced.",
-      reviewer1: "Guest Name 1",
-      reviewer2: "Guest Name 2",
-      reviewer3: "Guest Name 3",
 
       /* ---------- Booking form ---------- */
       bookTitle: "Check availability &amp; book",
