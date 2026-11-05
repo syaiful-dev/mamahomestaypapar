@@ -9,10 +9,10 @@
    ========================================================================== */
 
 const CONFIG = {
-  // Format antarabangsa, digit sahaja. 012-345 6789 -> 60123456789
-  whatsappNumber: "60123456789",
-  phoneDisplay: "012-345 6789",
-  email: "mamahomestaypapar@example.com",
+  // Format antarabangsa, digit sahaja. 011-4302 2004 -> 60114302004
+  whatsappNumber: "60114302004",
+  phoneDisplay: "011-4302 2004",
+  email: "mamahomestay24@gmail.com",
 
   currency: "RM",
 
