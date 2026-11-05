@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    Mama Homestay Papar - skrip laman utama
    --------------------------------------------------------------------------
    Semua teks dipaparkan datang daripada i18n.js (window.I18N). Fail ini
@@ -9,8 +9,8 @@
    ========================================================================== */
 
 const CONFIG = {
-  // Format antarabangsa, digit sahaja. 011-4302 2004 -> 60114302004
-  whatsappNumber: "60114302004",
+  // Format antarabangsa, digit sahaja. 011-4302 2004 -> 601143022004
+  whatsappNumber: "601143022004",
   phoneDisplay: "011-4302 2004",
   email: "mamahomestay24@gmail.com",
 
